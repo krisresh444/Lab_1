@@ -1,18 +1,26 @@
 #include <stdio.h>
-
 int main()
 {
-    float a,b,c;
-    suma = a
-    c = 0
-    while(suma!=0){
-        c+= suma%10;
-        suma/=10
-    }
-    if (suma = b)
-        printf("Сумма цифр =",b)
-    if (suma>b)
-        printf(suma)
+    float a, b, x;
+    scanf("%f", &a);
+    scanf("%f", &b);
+    scanf("%f", &x);
+    float max;
+
+    if (a!=b)
+    {
+        if (a>b)
+            max = a;
+        else
+            max = b;
+        if (max>x)
+            printf("%f - max - x",max-x);
+            //printf(max-x);
+        else
+            printf("%f - max + x",max+x);
+            //printf(max+x);
+        }
     else
-        printf(suma+b)
+        printf("a и b равны\n");
+    return 0;
 }
