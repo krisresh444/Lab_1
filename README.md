@@ -12,8 +12,11 @@
 int main()
 {
     float a, b, x;
+    printf("Enter a ->");
     scanf("%f", &a);
+    printf("Enter b ->");
     scanf("%f", &b);
+    printf("Enter x ->");
     scanf("%f", &x);
     float max;
 
@@ -24,20 +27,20 @@ int main()
         else
             max = b;
         if (max>x)
-            printf("%f - max - x",max-x);
-            //printf(max-x);
-        else
-            printf("%f - max + x",max+x);
-            //printf(max+x);
+            printf("%f - max - x\n",max-x);
+        if (max<x)
+            printf("%f - max + x\n",(a+b-max)+x);
+        if (max==x)
+            printf("%f - a и b равны\n",max=x);
         }
     else
-        printf("a и b равны\n");
+        printf(" - a и b равны\n");
     return 0;
 }
 ```
 ## Скриншоты резельтата работы
 <image src = 2024-09-26_13-32-15.png alt="блок-схема">
-<image src = 2024-09-26_14-07-36.png alt="результат кода">
+<image src = 2024-10-03_13-37-55.png alt="результат кода">
 
 ## Источники 
 (https://programforyou.ru/block-diagram-redactor)
